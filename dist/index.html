@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="assets/css/style.min.css">
+	
+	<!-- Useful meta tags -->
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta http-equiv="X-UA-Compatible" content="IE=9;IE=10;IE=Edge,chrome=1" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="robots" content="index, follow">
+	<meta name="google" content="notranslate">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="description" content="">
+	<!-- Title -->
+	<title>Films Library</title></head>
+
+<body>
+
+	<!-- Header -->
+	<header class="header">
+		<h1 class="header__title">
+			Films library
+		</h1>
+		<div class="header__content">
+			<button class="header__btn">
+				<span>close</span>
+				Add new film
+			</button>
+		</div>
+	</header>
+	
+	<main id="main" class="main">
+		<div class="container">
+	
+			<!-- Form -->
+			<div class="form">
+				<div class="container__content">
+					<div class="form__inner">
+						<div class="form__group">
+							<label class="form__label">
+								Title
+								<input class="form__input title" type="text">
+							</label>
+						</div>
+						<div class="form__group">
+							<label class="form__label">
+								Country
+								<input class="form__input country" type="text">
+							</label>
+						</div>
+						<div class="form__group">
+							<label class="form__label">
+								Year
+								<input class="form__input year" type="text">
+							</label>
+						</div>
+						<div class="form__group">
+							<label class="form__label">
+								Genre
+								<input class="form__input genre" type="text">
+							</label>
+						</div>
+						<div class="form__group">
+							<label class="form__label">
+								Actors
+								<input class="form__input actors" type="text">
+							</label>
+						</div>
+						<div class="form__group">
+							<label class="form__label">
+								Poster (link)
+								<input class="form__input poster" type="text">
+							</label>
+						</div>
+						<div class="form__group">
+							<label class="form__label">
+								Description
+								<textarea class="form__textarea description"></textarea>
+							</label>
+						</div>
+						<div class="form__btn btn__group">
+							<button id="formCancel" class="form__btn btn btn--red edit-cancel">Cancel</button>
+							<button id="formAdd" class="form__btn btn btn--blue movie-add">Add</button>
+						</div>
+					</div>
+				</div>
+			</div>
+	
+			<!-- Article Pattern -->
+			<article class="movie pattern">
+				<div class="movie__data">
+					<div class="movie__poster">
+						<span class="movie__poster--fill">
+							<img src="" />
+						</span>
+						<span class="movie__poster--featured">
+	
+							<img src="" />
+						</span>
+					</div>
+					<div class="movie__details">
+						<h2 class="movie__title">
+	
+						</h2>
+						<p class="movie__description">
+	
+						</p>
+						<div class="movie__credits">
+							<ul class="movie__tags">
+								<li class="movie__country">
+									<p>
+										Country:
+									</p>
+								</li>
+								<li class="movie__country">
+									<strong>
+	
+									</strong>
+								</li>
+							</ul>
+							<ul class="movie__tags">
+								<li class="movie__year">
+									<p>
+										Year:
+									</p>
+								</li>
+								<li class="movie__year">
+									<strong>
+	
+									</strong>
+								</li>
+							</ul>
+							<ul class="movie__tags">
+								<li class="movie__genre">
+									<p>
+										Genre:
+									</p>
+								</li>
+								<li class="movie__genre">
+									<strong>
+	
+									</strong>
+								</li>
+							</ul>
+							<ul class="movie__tags">
+								<li class="movie__actors">
+									<p>
+										Actors:
+									</p>
+								</li>
+								<li class="movie__actors">
+									<strong>
+	
+									</strong>
+								</li>
+							</ul>
+						</div>
+						<div class="movie__buttons btn__group">
+							<button class="btn btn--red movie-del">Delete</button>
+							<button class="btn btn--blue movie-edit">Edit</button>
+						</div>
+					</div>
+				</div>
+				<div class="container__content">
+					<div class="movie__edit form__inner">
+						<div class="form__group">
+							<label class="form__label">
+								Title
+								<input class="form__input title" type="text">
+							</label>
+						</div>
+						<div class="form__group">
+							<label class="form__label">
+								Country
+								<input class="form__input country" type="text">
+							</label>
+						</div>
+						<div class="form__group">
+							<label class="form__label">
+								Year
+								<input class="form__input year" type="text">
+							</label>
+						</div>
+						<div class="form__group">
+							<label class="form__label">
+								Genre
+								<input class="form__input genre" type="text">
+							</label>
+						</div>
+						<div class="form__group">
+							<label class="form__label">
+								Actors
+								<input class="form__input actors" type="text">
+							</label>
+						</div>
+						<div class="form__group">
+							<label class="form__label">
+								Poster (link)
+								<input class="form__input poster" type="text">
+							</label>
+						</div>
+						<div class="form__group">
+							<label class="form__label">
+								Description
+								<textarea class="form__textarea description"></textarea>
+							</label>
+						</div>
+						<div class="form__btn btn__group">
+							<button class="form__btn btn btn--red edit-cancel">Cancel</button>
+							<button class="form__btn btn btn--blue edit-save">Save</button>
+						</div>
+					</div>
+				</div>
+				<div class="comments">
+					<div class="container__content">
+						<button class="comments__btn comments-down">Comments: <span class="comment-count"></span></button>
+						<div class="comments__inner">
+							<ul class="comments__group"></ul>
+							<input class="comments__input" type="text" placeholder="Add your comment">
+							<button class="comments__add btn btn--blue comments-add">Add</button>
+						</div>
+					</div>
+				</div>
+			</article>
+	
+		</div>
+	</main>
+
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+		integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+	<script src="assets/js/app.js"></script>
+</body>
+
+</html>
